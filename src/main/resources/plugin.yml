@@ -1,0 +1,36 @@
+name: UsefullShops
+version: '${version}'
+main: fr.frankulinn.usefullshops.UsefullShopsPlugin
+api-version: '1.21'
+authors: [Frankulinn]
+description: Shops opened through FancyNpcs NPCs, with modded item support.
+depend: [FancyNpcs, Vault]
+
+commands:
+  usefullshops:
+    description: Manage UsefullShops
+    aliases: [us, ushop, shops]
+    usage: /<command> help
+
+permissions:
+  usefullshops.use:
+    description: Open a shop through its NPC
+    default: true
+  usefullshops.admin.*:
+    description: All administration permissions
+    default: op
+    children:
+      usefullshops.admin.create: true
+      usefullshops.admin.delete: true
+      usefullshops.admin.list: true
+      usefullshops.admin.edit: true
+      usefullshops.admin.view: true
+      usefullshops.admin.items: true
+      usefullshops.admin.permission: true
+      usefullshops.admin.npc: true
+      usefullshops.admin.reload: true
+      usefullshops.admin.validate: true
+      usefullshops.admin.history: true
+  usefullshops.bypass.permission:
+    description: Ignore the permission restriction of shops
+    default: op

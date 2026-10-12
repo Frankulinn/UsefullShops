@@ -1,0 +1,24 @@
+# Spécifications internes (restent en local, jamais publiées)
+CAHIER_DES_CHARGES.md
+
+# Outillage de développement assisté (non publié)
+CLAUDE.md
+.claude/
+graphify-out/
+
+# Gradle / build
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+out/
+.vscode/
+
+# Serveur de test local
+run/
+
+# OS
+.DS_Store
